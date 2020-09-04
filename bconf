@@ -1,0 +1,38 @@
+#!/usr/bin/zsh
+####
+#### BCONF - Some shitty configurations for my zsh
+####
+
+autoload colors
+
+# ^C-f and ^C-b fix
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+####
+####aliases
+####
+
+# lsd
+alias ls='lsd'
+alias ll='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+
+#git
+alias g='git'
+alias gc='git clone'
+alias gpull='git pull'
+alias gpush='git push'
+alias gl='git log'
+alias gls='git log --short'
+alias gamend='git commit --amend'
+
+#vim
+alias v='nvim'
+alias vim='nvim'
+alias neo='nvim'
+
+#blyat'
+alias sl='exit'
+alias gti='exit'
